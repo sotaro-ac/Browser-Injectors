@@ -9,5 +9,6 @@ YouTube Extentions for JavaScript Injector.
 ### [YouTube-Fix-Video-Behind](./youtube-fix-video-behind.js) [Now coding...]
 - Fix video behind the comment area in YonTube.
 
+---
 ## License
-- 
+This source code is under the MIT License, see LICENSE.
