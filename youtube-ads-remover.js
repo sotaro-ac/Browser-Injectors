@@ -1,7 +1,11 @@
 // ===
-// YouTube: 広告除去スクリプト
+// YouTube-Ads-Remover: 広告除去スクリプト
 // ===
 "use strict";
+
+/**
+ * TODO: アンケート広告の削除機能を実装する
+ */
 
 /*
     # Related Elements      : Selector
