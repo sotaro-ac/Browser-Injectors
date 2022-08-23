@@ -1,10 +1,10 @@
 // ===
-// YouTube: [SPACE]で動画にフォーカスする
+// YouTube: [Ctrl+SPACE]で動画にフォーカスする
 // ===
 "use strict";
 
 /**
- * - [Space] で動画にフォーカス + 画面スクロール
+ * - [Ctrl+SPC] で動画にフォーカス + 画面スクロール
  * - [ArrowUp] [ArrowDown] で動画にフォーカス
  */
 
@@ -41,8 +41,11 @@ if (document.getElementsByClassName('youtube-focus-video')[0]) {
         document.addEventListener('keydown', function (e) {
             switch (e.key) {
                 case ' ':
-                    // Spaceを押すとフォーカス+画面スクロール
-                    video.focus();  // { preventScroll: false }
+                    // Ctrl+SPCを押すとフォーカス+画面スクロール
+                    if (e.ctrlKey) {
+                        video.focus();  // { preventScroll: false }
+                        console.log("Ctrl+SPC");
+                    }
                     break;
 
                 case 'ArrowUp':
